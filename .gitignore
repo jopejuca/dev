@@ -1,2 +1,5 @@
 projects/*
 .idea/*
+.exports.*
+.*ignore.*
+flake.lock

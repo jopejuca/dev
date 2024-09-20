@@ -2,12 +2,14 @@
 
 ## Basic setup
 sudo apt update && sudo apt upgrade
+sudo apt-get dist-upgrade
 sudo apt install curl gnome-shell-extension-manager
 
 ## Optionals (did not tested yet to install via snap)
 sudo snap install code --classic
 sudo snap install remmina
 sudo snap install direnv
+sudo snap install keepassxc
 
 ## Install Twingate
 curl -s https://binaries.twingate.com/client/linux/install.sh | sudo bash

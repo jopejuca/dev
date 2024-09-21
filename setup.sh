@@ -50,6 +50,14 @@ docker run hello-world
 ## Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+## Create app directory for maturin
+mkdir /app
+sudo chmod -R 777 /app
+
+
+
+
+
 ## Set Zsh as default shell
 echo $(which zsh) | sudo tee -a /etc/shells
 chsh -s $(which zsh)

@@ -3,6 +3,7 @@
   home = {
     packages = with pkgs; [
         # System utilities
+        pacman
         openssh # secure shell protocol
         which # locate executables
         git # version control system

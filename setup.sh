@@ -4,6 +4,8 @@
 sudo apt update && sudo apt upgrade
 sudo apt-get dist-upgrade
 sudo apt install curl gnome-shell-extension-manager
+sudo apt-get install build-essential
+sudo apt-get install fuse libfuse2
 
 ## Optionals (did not tested yet to install via snap)
 sudo snap install code --classic
@@ -51,7 +53,7 @@ docker run hello-world
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ## Create app directory for maturin
-mkdir /app
+sudo mkdir /app
 sudo chmod -R 777 /app
 
 
@@ -71,3 +73,6 @@ echo "Updating home-manager nixpkgs..."
 up
 echo "Installing packages..."
 hm
+
+echo '' > ~/.bashrc
+echo '. /home/jopejuca/.nix-profile/etc/profile.d/nix.sh' > ~/.bashrc
